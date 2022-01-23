@@ -1,0 +1,119 @@
+.App {
+  background-color: rgb(10, 22, 38);
+  height: 100vh;
+  max-width: 2637px;
+  font-family: Inter, sans-serif;
+  overflow: hidden;
+}
+.App * {
+  box-sizing: border-box;
+}
+.header {
+  background-color: rgb(10, 22, 38);
+  min-height: 90vh;
+  height: fit-content;
+  background-image: url(/public/assets/header-background.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding-bottom: 4rem;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header .social-media {
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  display: none;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.header .txtCont {
+  position: relative;
+  z-index: 15;
+  width: 100%;
+  height: fit-content;
+}
+.headertxtstyle {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: -0.05em;
+  color: rgb(255, 255, 255);
+}
+.txtCont .subtxt {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.txtCont .subtxt span {
+  color: rgb(82, 204, 130);
+  margin: 0px 0.5rem;
+}
+.txtCont .headerTxt {
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 460px){
+  .headertxtstyle {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 600px){
+  .headertxtstyle {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 768px){
+  .header {
+    padding-bottom: 3rem;
+  }
+  .headertxtstyle {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .header {
+    height: 110vh;
+    padding-bottom: 3rem;
+  }
+  .header .social-media {
+    right: 3rem;
+    top: 6rem;
+    gap: 1.5rem;
+  }
+  .headertxtstyle {
+    font-size: 3.5rem;
+  }
+
+}
+@media only screen and (min-width: 1200px){
+  .header {
+    padding-bottom: 4rem;
+  }
+  .header .social-media {
+    display: flex;
+    right: 2rem;
+    top: 6rem;
+  }
+  .headertxtstyle {
+    font-size: 4.5rem;
+  }
+}
+
+
